@@ -7,7 +7,7 @@ app = Flask(__name__)
 # MOCK lista desenvolvedores
 devs = []
 
-@app.route('/api/')
+@app.route('/api')
 def mensagem():
     return 'API de desenvolvedores'
 
