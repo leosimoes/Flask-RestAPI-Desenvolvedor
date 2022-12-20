@@ -12,7 +12,7 @@ def verificacao(login, senha):
         return False
     return Usuarios.query.filter_by(login=login, senha=senha).first()
 
-@app.route('/api/login')
+@app.route('/api/v2/login')
 @auth.login_required
 def logar():
     return 'Usuário logado.'
